@@ -1,0 +1,11 @@
+[Perlin Noise].sprite3 
+FileSystemFileHandle {kind: 'file', name: '[Perlin Noise].sprite3'}
+kind
+: 
+"file"
+name
+: 
+"[Perlin Noise].sprite3"
+[[Prototype]]
+: 
+FileSystemFileHandle

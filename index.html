@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Index HTML File</title>
+
+
+    <link rel="stylesheet" href="assets/themeStyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+</head>
+
+
+
+
+<style>
+    /* Second 9 amendments */
+
+
+
+    body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    [card] {
+        background: var(--surface);
+        border: 1px var(--border) solid;
+        border-radius: 20px;
+        padding: 25px 35px 25px 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        place-items: center;
+        max-width: 275px;
+
+    }
+
+    row,
+    column {
+        display: flex;
+        gap: 7px;
+    }
+
+
+    select {
+        background: var(--button-bg);
+        border: 1px var(--border) solid;
+        border-radius: 5px;
+        padding: 5px 5px 5px 5px;
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        place-items: center;
+    }
+
+    select:hover {
+        background: var(--button-hover);
+        cursor: pointer;
+    }
+
+
+    .bar-holder {
+        width: 100%;
+        height: 14px;
+        border-radius: 20px;
+        background: #91a798;
+        overflow: hidden;
+    }
+
+    .bar {
+        width: 0%;
+        height: 14px;
+        background: #0fa73f;
+        transition: width 0.5s ease;
+    }
+
+    .statusText {
+        scale: 0.5;
+    }
+</style>
+
+
+
+
+
+<body>
+
+    <div class="main-card" card data-tooltip="">
+
+        <row data-tooltip="Select a folder to organize by the above dropdown">
+            <b>File management tool</b>
+            <i class="ph ph-info" style="padding-top: 3px;"></i>
+        </row>
+
+        <a>By @mcv-s</a>
+        <br>
+
+        <select>
+            <option>Sort folder by file type</option>
+        </select>
+        <div spacer></div>
+
+        <button class="startButton"><i class="ph ph-file"></i> Organize Folder</button>
+
+        <div class="bar-holder">
+            <div class="bar"></div>
+        </div>
+        <i><div hidden class="statusText" style="padding-top: 5px;">Moved file absads.html</div></i>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+<script src="program.js"></script>
+<script src="assets/themeToggle.js"></script>
+<script src="assets/tooltips.js"></script>
+
+</html>
