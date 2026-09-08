@@ -34,35 +34,45 @@
 
 <body>
 
-    <div class="main-card" card data-tooltip="">
-
-        <row data-tooltip="Select a folder to organize by the above dropdown">
-            <b>File sorting tool</b>
-            <i class="ph ph-info" style="padding-top: 3px;"></i>
+    <column style="gap: 0px;">
+        <!--
+        <row style="gap: 0px;">
+            <div class="tab1" active>Sorter</div>
+            <div class="tab2">Viewer</div>
         </row>
 
-        <a href="https://mcv-s.github.io/" style="text-decoration: none; color: var(--text);">By @mcv-s</a>
-        <br>
+        -->
 
-        <select disabled data-tooltip="More options coming?">
-            <option>Sort folder by file type</option>
-        </select>
-        <div spacer></div>
+        <div class="main-card" card data-tooltip="">
 
-        <button class="startButton" data-tooltip="Press to open directory picker"><i class="ph ph-file"></i> Organize
-            Folder</button>
+            <row data-tooltip="Select a folder to organize by the above dropdown">
+                <b>File sorting tool</b>
+                <i class="ph ph-info" style="padding-top: 3px;"></i>
+            </row>
 
-        <div hidden class="bar-holder">
-            <div class="bar"></div>
+            <a href="https://mcv-s.github.io/" style="text-decoration: none; color: var(--text);">By @mcv-s</a>
+            <br>
+
+            <select disabled data-tooltip="More options coming?">
+                <option>Sort folder by file type</option>
+            </select>
+            <div spacer></div>
+
+            <button class="startButton" data-tooltip="Press to open directory picker"><i class="ph ph-file"></i>
+                Organize
+                Folder</button>
+
+            <div hidden class="bar-holder">
+                <div class="bar"></div>
+            </div>
+
+            <i>
+                <div hidden class="statusText" style="padding-top: 5px;">Moved file absads.html</div>
+            </i>
+
+
         </div>
-
-        <i>
-            <div hidden class="statusText" style="padding-top: 5px;">Moved file absads.html</div>
-        </i>
-
-
-    </div>
-
+    </column>
 
 
 

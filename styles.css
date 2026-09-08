@@ -18,6 +18,7 @@ body {
     border: 1px var(--border) solid;
     border-radius: 20px;
     padding: 25px 35px 25px 35px;
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -26,12 +27,44 @@ body {
     width: 275px;
     max-width: 275px;
 
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.tab1, .tab2 {
+    background: var(--surface);
+    border: 1px var(--border) solid;
+    border-radius: 20px;
+    padding: 15px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    place-items: center;
+    width: 50%;
+
+
+    border-radius:  20px 0 0 0;
+    cursor: pointer;
+}
+
+.tab2 {
+    border-radius:  0 20px 0 0;
+}
+
+.tab1:hover, .tab2:hover {
+    background: var(--button-bg);
 }
 
 row,
 column {
     display: flex;
     gap: 7px;
+}
+
+column {
+    flex-direction: column;
 }
 
 
