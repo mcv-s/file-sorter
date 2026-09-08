@@ -7,7 +7,6 @@ const startButton = document.querySelector(".startButton");
 const statusText = document.querySelector(".statusText");
 
 
-loadingBarHolder.hidden = true;
 
 
 async function getCurrentFolders(folder) {
@@ -69,7 +68,8 @@ async function sortF(folder) {
                 await writable.write(contents);
                 await writable.close();
                 await handle.remove();
-                statusText.innerHTML = 'Sorted file ' + handle.name
+                statusText.innerHTML =
+                    "Sorted file " + handle.name.slice(0, 20) + "...";
             }
 
         }

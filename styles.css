@@ -22,6 +22,8 @@ body {
     flex-direction: column;
     gap: 10px;
     place-items: center;
+    min-width: 275px;
+    width: 275px;
     max-width: 275px;
 
 }
@@ -63,12 +65,41 @@ select:hover {
 }
 
 .bar {
+    position: relative;
     width: 0%;
     height: 14px;
     background: #0fa73f;
     transition: width 0.5s ease;
+    overflow: hidden;
 }
+
+
+.bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(-30deg,
+            transparent 0 6px,
+            rgba(255, 255, 255, 0.2) 6px 12px);
+    animation: stripes 1s linear infinite;
+}
+
+@keyframes stripes {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0px -14px;
+    }
+}
+
+
+
 
 .statusText {
     scale: 0.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

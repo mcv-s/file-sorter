@@ -11,11 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>File management tool</title>
+    <link rel="icon" href="Icon_1.svg">
+
 
 
     <link rel="stylesheet" href="assets/themeStyles.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+
 
 
 </head>
@@ -32,7 +37,7 @@
     <div class="main-card" card data-tooltip="">
 
         <row data-tooltip="Select a folder to organize by the above dropdown">
-            <b>File management tool</b>
+            <b>File sorting tool</b>
             <i class="ph ph-info" style="padding-top: 3px;"></i>
         </row>
 
@@ -40,17 +45,20 @@
         <br>
 
         <select disabled data-tooltip="More options coming?">
-            <option >Sort folder by file type</option>
+            <option>Sort folder by file type</option>
         </select>
         <div spacer></div>
 
-        <button class="startButton" data-tooltip="Press to open directory picker"><i class="ph ph-file"></i> Organize Folder</button>
+        <button class="startButton" data-tooltip="Press to open directory picker"><i class="ph ph-file"></i> Organize
+            Folder</button>
 
-        <div class="bar-holder">
+        <div hidden class="bar-holder">
             <div class="bar"></div>
         </div>
-        
-        <i><div hidden class="statusText" style="padding-top: 5px;">Moved file absads.html</div></i>
+
+        <i>
+            <div hidden class="statusText" style="padding-top: 5px;">Moved file absads.html</div>
+        </i>
 
 
     </div>
